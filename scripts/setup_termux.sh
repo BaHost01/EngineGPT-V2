@@ -34,7 +34,8 @@ pkg install -y termux-x11-nightly || echo "Please ensure you have the termux-x11
 
 # 4. Configure and Build
 echo "Configuring project for Termux..."
-# We use Ninja for faster builds on mobile
+# Clean previous build to avoid path conflicts if moved
+rm -rf build
 cmake -S . -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
     -DTERMUX_BUILD=ON

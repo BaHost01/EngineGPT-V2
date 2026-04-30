@@ -22,6 +22,7 @@ fi
 
 # Configure and Build
 echo "Configuring project..."
+rm -rf build
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 
 echo "Building project..."

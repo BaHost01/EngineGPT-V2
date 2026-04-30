@@ -34,6 +34,7 @@ if [ ! -d ".git" ]; then
 fi
 
 # Delegate to platform scripts
+rm -rf build
 if [ "$ENV" == "Termux" ]; then
     chmod +x scripts/setup_termux.sh
     ./scripts/setup_termux.sh
