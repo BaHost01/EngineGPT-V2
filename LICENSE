@@ -1,26 +1,6 @@
-
-### Notas sobre o README
-
-- **Recursos Principais**: Destaca as principais funcionalidades da engine.
-- **Instalação**: Orienta o usuário sobre como executar o script de instalação.
-- **Estrutura do Projeto**: Fornece uma visão geral da estrutura de diretórios da engine.
-- **Contribuição**: Incentiva a contribuição de outros desenvolvedores.
-- **Créditos**: Reconhece as ferramentas e bibliotecas de código aberto utilizadas.
-- **Licença**: Indica que o projeto está sob a licença MIT, que é uma licença de software livre e permissiva.
-- **Documentação**: Aponta para a documentação detalhada no diretório `docs/`.
-- **Suporte**: Fornece informações de contato para suporte.
-- **Futuras Atualizações**: Informa sobre possíveis melhorias e funcionalidades futuras.
-
-### Arquivo de Licença
-
-Aqui está um exemplo de arquivo de licença MIT para incluir no seu projeto:
-
-#### LICENSE
-
-```markdown
 MIT License
 
-Copyright (c) 2024 [Guilherme Santos. Patricio.]
+Copyright (c) 2026 EngineGPT Team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

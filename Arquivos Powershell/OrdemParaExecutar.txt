@@ -1,4 +1,0 @@
-Execute o script set_env_variables.ps1 para configurar o ambiente.
-Execute o script configure_engine.ps1 para preparar a engine.
-Execute o script build_engine.ps1 para compilar a engine.
-Execute o script check_scripts.ps1 para garantir que todos os passos anteriores foram concluídos corretamente.
