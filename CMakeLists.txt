@@ -88,15 +88,27 @@ FetchContent_MakeAvailable(googletest)
 find_package(OpenGL REQUIRED)
 
 # --- Engine Target ---
-file(GLOB_RECURSE ENGINE_SOURCES "src/*.cpp")
-file(GLOB_RECURSE ENGINE_HEADERS "include/*.h" "include/*.hpp")
+# Organizando fontes e headers para melhor experiência de desenvolvimento
+file(GLOB_RECURSE ENGINE_SOURCES 
+    "src/core/*.cpp"
+    "src/graphics/*.cpp"
+    "src/physics/*.cpp"
+    "src/audio/*.cpp"
+    "src/ui/*.cpp"
+    "src/main.cpp"
+)
 
-add_executable(${PROJECT_NAME} ${ENGINE_SOURCES} ${ENGINE_HEADERS})
+add_executable(${PROJECT_NAME} ${ENGINE_SOURCES})
 
 target_include_directories(${PROJECT_NAME} PUBLIC 
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
 )
+
+# Adicionando suporte específico para Termux (Android)
+if(ANDROID)
+    target_compile_definitions(${PROJECT_NAME} PRIVATE __ANDROID__)
+endif()
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
     glfw
