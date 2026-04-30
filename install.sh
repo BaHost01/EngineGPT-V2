@@ -29,7 +29,7 @@ fi
 if [ ! -d ".git" ]; then
     echo "Cloning EngineGPT-V2 repository..."
     pkg install git -y || sudo apt-get install git -y
-    git clone https://github.com/YourUsername/EngineGPT-V2.git
+    git clone https://github.com/BaHost01/EngineGPT-V2.git
     cd EngineGPT-V2
 fi
 

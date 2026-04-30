@@ -26,7 +26,7 @@ EngineGPT-V2 is a modern, lightweight, and efficient game engine designed for hi
 
 Install everything with a single command:
 ```bash
-curl -sSL https://raw.githubusercontent.com/YourUsername/EngineGPT-V2/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/BaHost01/EngineGPT-V2/main/install.sh | bash
 ```
 
 ### Installation & Build
